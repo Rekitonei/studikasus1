@@ -1,0 +1,114 @@
+/* membuat style untuk bagian body dari file index.html*/
+body{
+    /* mengatur warna background pada body */
+    background-color: #fff;
+    /* mengatur warna teks pada body */
+    color: #212529;
+    /* mengatur ukuran huruf pada body */
+    font-size: 1rem;
+    /* mengatur tebal huruf pada body */
+    font-weight: 400;
+    /* mengatur tebal garis pada body */
+    line-height: 1.5;
+    /* mengatur jarak content pada body dari tepi layar laptop */
+    margin: 0;
+    /* mengatur teks pada body supaya rata kiri */
+    text-align: left;
+}
+
+/* mengatur style untuk  seluruh elemen pada/templates/index.html yang berada di dalam <div class="container">*/
+.container{
+    /* mengatur jarak tepi kiri */
+    margin-left: auto;
+    /* mengatur tepi kanan */
+    /* jika tepi kanan kiri di buat auto, maka posisi elemen akan berada persis di tengah-tengah halaman  */
+    margin-right: auto;
+    /* mengatur jarak kanan kiri dari margin*/
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    /* mengaur lebar maksimal halaman proposional terhadap lebar layar (90% dari lebar layar laptop) */
+    width: 90%;
+}
+
+/* mengatur style pada seluruh elemen index.html yang berada di dalam <div class="jumbotron"> */
+.jumbotron {
+    /* warna background */
+    background-color: #477bff;
+    /* warna teks */
+    color: #fff;
+    /* mengatur jarak tepi bawah */
+    margin-bottom: 2rem;
+    /* jarak dari margin kanan kiri */
+    padding: 2rem 1rem;
+    /* posisi teks di tengah */
+    text-align: center;
+}
+
+/* mengatur style untu seluruh elemen index.html yang berada di dalam <div class="section"> */
+.section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+/* mengatur animasi pada <div class="section"> yang akan aktif ketika disorot dengan pointer mouse */
+.section:hover {
+    /* warna background akan berubah */
+    background-color: #f5f5f5;
+    /* mengatur transisi perubahan warna teks selama  2detik, dan perubahan warna background selama 0.15detik dengan efek menjauh */
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+/* mengatur jenis font dan ukurannyaa untuk seluruh elemen heading <h1> pada index.html */
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+/* memberikan style pada button submit daan form input data */
+button, input[type="submit"] {
+    background-color: #d9edff;
+    /* memberikan garis tepi dengan tebal 1px */
+    border: 1px solid transparent;
+    /* memberikan efek bulat pada pojok-pojok */
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    /* memberikan efek animasi perubahan warna */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    /* membuat posisi teks berada di tengah secara vertikal */
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="number"]{
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"], input[type="number"]:hover {
+ background-color: #f5f5f5;
+ transition: color 2s ease-in-out, background-color 0.15s ease-in-out;   
+}
+
+/* memberi style pada <table> */
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+/* membuat warna tabel selang-seling, baris nomor ganjil mendapatkan warna berbeda */
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3);
+}

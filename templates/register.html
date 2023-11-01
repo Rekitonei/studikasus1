@@ -4,7 +4,7 @@
     <style>
         body {
             background-image: url("/static/img/1161810.jpg");
-            background-size: cover;
+            background-size: auto;
             background-repeat: no-repeat;
           }
         fieldset {
@@ -18,7 +18,7 @@
         form {
             text-align: center; /* Menengahkan konten dalam form */
         }
-        input[type="text"] {
+        input[type="text"], input[type="password"] {
             width: 300px;
             padding: 10px; 
             border: 1px solid #ccc; 
@@ -51,9 +51,9 @@
               <td></td><br>
               <input name ="Username" placeholder="Username" type="text"><br>
               <td></td><br>
-              <input name ="Password" placeholder="Password" type="text"><br>
+              <input name ="Password" placeholder="Password" type="password"><br>
               <td></td><br>
-              <input name ="rpassword" placeholder=" Repeat Password" type="text"><br>
+              <input name ="rpassword" placeholder=" Repeat Password" type="password"><br>
               <td></td><br>
               <input type="submit" value="sign up"><br>
             </form>    

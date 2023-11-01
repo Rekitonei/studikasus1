@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("/static/img/1161810.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+          }
+        fieldset {
+            text-align: center;
+            font-size:30px;
+            font-style: italic;
+            margin: 0 auto;
+            width: 0%;
+            border-radius: 10px;
+        }
+        form {
+            text-align: center; /* Menengahkan konten dalam form */
+        }
+        input[type="text"], input[type="password"] {
+            width: 300px;
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            color: black; 
+        }
+        input[type="submit"] {
+            width: 320px;
+            padding: 10px; 
+            font-size: 16px; 
+            border-radius: 5px;
+            background-color: #477bff;
+            color: aliceblue;
+            cursor: pointer;
+      }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <fieldset>
+        <legend>Login</legend>
+            <form action="/login" method="POST">
+              <td></td><br>
+              <input name ="Username" placeholder="Username" type="text"><br>
+              <td></td><br>
+              <input name ="Password" placeholder="Password" type="password"><br>
+              <td></td><br>
+              <input type="submit" value="login"><br>
+            </form>    
+    </fieldset>
+</body>
+</html>
